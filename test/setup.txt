@@ -1,0 +1,12 @@
+PidFile=./ps_srv.pid
+
+ListenPort=40008
+
+SupportIPV6=0
+
+MaxConns=1024
+
+MaxCmdThreadNum=10
+
+ListenQueSize=1024
+
