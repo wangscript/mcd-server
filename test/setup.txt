@@ -1,6 +1,6 @@
 PidFile=./ps_srv.pid
 
-ListenPort=40008
+ListenPort=40009
 
 SupportIPV6=0
 
@@ -10,3 +10,4 @@ MaxCmdThreadNum=10
 
 ListenQueSize=1024
 
+DebugLevel=0
