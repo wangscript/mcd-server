@@ -12,8 +12,9 @@ static enum try_parse_result simple_parse_requset(conn *c) {
   else
     c->keepalive = 1;
 
+  /* c->rbuf will be drained */
   evbuffer_add_buffer(c->wbuf, c->rbuf);
-  evbuffer_drain(c->rbuf, len);
+  /*evbuffer_drain(c->rbuf, len);*/
   c->parse_to_go = conn_write;
   return PARSE_OK;
 }
